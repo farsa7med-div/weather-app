@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Map</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- search country container -->
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Enter Country Name" />
+    <button id="search-btn">Search</button>
+  </div>
+
+  <!-- geolocation button -->
+  <button id="geo-btn">My Location</button>
+
+  <!-- map container -->
+  <div id="map"></div>
+
+  <!-- weather information containers -->
+  <div id="weather-container">
+    <div class="weather-card">
+      <h2>Location Weather</h2>
+      <div class="weather-image" id="location-weather-image"></div>
+      <div class="weather-info" id="location-weather"></div>
+    </div>
+    <div class="weather-card">
+      <h2>Current Weather</h2>
+      <div class="weather-image" id="current-weather-image"></div>
+      <div class="weather-info" id="current-weather"></div>
+    </div>
+  </div>
+
+  <!-- forecast information containers -->
+  <div id="forecast">
+    <div class="forecast-card">
+      <h2>Day 1</h2>
+      <div class="forecast-image" id="day1-weather-image"></div>
+      <div class="forecast-info" id="day1-weather"></div>
+    </div>
+    <div class="forecast-card">
+      <h2>Day 2</h2>
+      <div class="forecast-image" id="day2-weather-image"></div>
+      <div class="forecast-info" id="day2-weather"></div>
+    </div>
+    <div class="forecast-card">
+      <h2>Day 3</h2>
+      <div class="forecast-image" id="day3-weather-image"></div>
+      <div class="forecast-info" id="day3-weather"></div>
+    </div>
+  </div>
+
+  <!-- Mapbox and jQuery libraries -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
